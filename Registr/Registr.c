@@ -148,7 +148,7 @@ main()
 		sprintf(str00, "%s", str00);
 		DWORD StrParamLen00 = wcslen(str00);
 		//printf("%s", "Выберите шрифт (1 - Monofur,2 - Proggy, 3 - Courier)");
-		if (RegSetValueExA(tmp, "MyStrParam2", NULL, RRF_RT_ANY, str00, StrParamLen00 * sizeof(WCHAR)) == ERROR_SUCCESS)
+		if (RegSetValueExA(tmp, "MyStrParam2", NULL, REG_SZ, str00, StrParamLen00 * sizeof(WCHAR)) == ERROR_SUCCESS)
 		{
 
 
