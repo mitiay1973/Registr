@@ -27,6 +27,7 @@ main()
 	}
 	while (1)
 	{
+		Sleep(500);
 		LPDWORD DataType = NULL;
 		LPDWORD Datalen = 512;
 		LPWSTR StrValue = malloc(1);
